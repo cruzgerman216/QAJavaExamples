@@ -3,12 +3,32 @@ package com.qa.helloworld1;
 public class FlowCharts {
 	public static void main(String[] args) {
 		myFloatchartIterator(100);
+		TenTimesEach();
 	}
 	
 	public static void myFloatchartIterator(int A) {
 		while(A < 200) {
 			System.out.println("print" + A);
 			A++;
+		}
+	}
+	
+	public static void myFloatchartIterator2(int A) {
+		while(A <= 200) {
+			if(A%2 == 0) {
+				System.out.println("-");
+			}else {
+				System.out.println("*");
+			}
+			A++;
+		}
+	}
+	
+	public static void TenTimesEach() {
+		for(int i = 1; i < 11; i++) {
+			for(int j = 1; j < 11; j++) {
+				System.out.println(i);
+			}
 		}
 	}
 	public static int myMethod(int num1, int num2, boolean flag) {
