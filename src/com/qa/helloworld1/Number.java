@@ -6,6 +6,7 @@ public class Number {
 		System.out.println(add(81));
 		
 		System.out.println(IntegerToString(439));
+		printWords(100);
 	}
 
 	public static int add(int num) {
@@ -32,6 +33,12 @@ public class Number {
 		}
 		
 		return str;
+	}
+	
+	public static void printWords(int num) {
+		for(int i = 1; i < num+1; i++) {
+			System.out.println(IntegerToString(i));
+		}
 	}
 
 	public static String getIntegerString(int num) {
